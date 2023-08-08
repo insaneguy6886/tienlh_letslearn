@@ -1,0 +1,50 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "tienlh",
+    "password": "tienlh"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "tienlh",
+    "password": "tienlh"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGNhMWVkZGVjOWMzODBjN2U2ZGQwNWIiLCJpYXQiOjE2OTA5OTIyMzR9.2wb2ly0RGFXWSurWRaiJYjCMyvBPgCT-BXAfeBVvaNg
+
+{
+    "title": "four",
+    "description": "React",
+    "url": "react.com",
+    "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Beerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGNhMWVkZGVjOWMzODBjN2U2ZGQwNWIiLCJpYXQiOjE2OTA5OTIyMzR9.2wb2ly0RGFXWSurWRaiJYjCMyvBPgCT-BXAfeBVvaNg
+
+###
+PUT http://localhost:5000/api/posts/64ca367a080e5e73711c3abd
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGNhMWVkZGVjOWMzODBjN2U2ZGQwNWIiLCJpYXQiOjE2OTA5OTIyMzR9.2wb2ly0RGFXWSurWRaiJYjCMyvBPgCT-BXAfeBVvaNg
+
+{
+    "title": "Updated test",
+    "description": "YEEEEEEE",
+    "url": "https://vuejs.org",
+    "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/64ca8c5a17c7f6af1a985667
+Authorization: Beerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGNhMWVkZGVjOWMzODBjN2U2ZGQwNWIiLCJpYXQiOjE2OTA5OTIyMzR9.2wb2ly0RGFXWSurWRaiJYjCMyvBPgCT-BXAfeBVvaNg
